@@ -1,13 +1,82 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu",
+    "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-color: #000;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New", monospace;
+}
+
+.todo-container {
+  padding: 100px;
+  width: 50%;
+  margin: 0 auto;
+}
+
+.font-white {
+  color: #fff !important;
+}
+
+.todo-item {
+  width: 220px;
+  height: 50px;
+  border-bottom: 1px solid rgba(100, 100, 100, 0.5);
+  cursor: pointer;
+  background-color: #1b1925;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  padding: 0 10px;
+}
+
+.state-container {
+  padding: 2px 10px;
+  border-radius: 14px;
+  font-size: 13px;
+}
+
+.todo-list-container {
+  background-color: #1b1925;
+  padding: 10px;
+  width: 240px;
+  max-height: 500px;
+  overflow-y: auto;
+  overflow-x: hidden;
+}
+
+.todo-list-container::-webkit-scrollbar {
+  width: 3px;
+}
+.todo-list-container::-webkit-scrollbar-thumb {
+  background-color: salmon;
+}
+.todo-list-container::-webkit-scrollbar-track {
+  background-color: #1b1925;
+}
+
+.move_down {
+  padding-top: 10px;
+  transition: 0.15s ease-in-out;
+}
+
+.move_up {
+  padding-bottom: 10px;
+  transition: 0.15s ease-in-out;
+}
+
+.red {
+  background-color: #e8668b;
+}
+
+.blue {
+  background-color: #59a6f4;
+}
+
+.green {
+  background-color: #45caa0;
 }
